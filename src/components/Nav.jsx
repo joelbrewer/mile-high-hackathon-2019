@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import TemporaryDrawer from './drawer.js'
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,6 +22,8 @@ const useStyles = makeStyles(theme => ({
     width: '5em',
     margin: '0 auto',
   },
+  phoneNumber: {
+  },
 }));
 
 export default function Nav() {
@@ -34,6 +37,9 @@ export default function Nav() {
             <TemporaryDrawer></TemporaryDrawer>
           </IconButton>
           <img src={require("../DenverHelpsLogo.png")} className={classes.image} alt="logo"/>
+          <Typography className={classes.phoneNumber} variant="h7" >
+            Text "Denver Helps" <br/>to 425-374-0096
+          </Typography>
         </Toolbar>
       </AppBar>
     </>
