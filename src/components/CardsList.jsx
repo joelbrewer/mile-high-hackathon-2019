@@ -16,7 +16,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function CardsList() {
   const classes = useStyles();
-  console.log(faq_data)
 
   const infoCards = faq_data.map(data => (
     <InfoCard

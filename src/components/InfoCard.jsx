@@ -38,7 +38,6 @@ const useStyles = makeStyles(theme => ({
 export default function InfoCard(props) {
   const classes = useStyles();
 
-    console.log("props", props)
   return (
       <Card className={classes.card}>
         <CardMedia
