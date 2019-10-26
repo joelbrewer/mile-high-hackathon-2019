@@ -2,7 +2,7 @@ export const faq_data = [
   {
     id: 1,
     question: "I want to help a homeless person I pass on the streets every day, or who is sleeping in front of my home",
-    answer_html: "<p>Unless you feel that the situation is unsafe, ask the person if he or she needs assistance and has visited an organization that helps homeless people. You can let them know that <a href='https://www.coloradocoalition.org/'>https://www.coloradocoalition.org/community-resources-and-path)</a> will help them find more permanent housing, healthcare, and guidance.</p><p>If you are not comfortable engaging the person, then call 311 to let the city know that there is a homeless person who appears to need services, and they will send an outreach team. You should be able to let them know where the person is, what he or she is wearing, what condition he or she seems to be in, and whether it is an emergency.</p>",
+    answer_html: "<p>Unless you feel that the situation is unsafe, ask the person if he or she needs assistance and has visited an organization that helps homeless people. You can let them know that <a href='https://www.coloradocoalition.org/'>Colorado Coalition</a> will help them find more permanent housing, healthcare, and guidance.</p><p>If you are not comfortable engaging the person, then call 311 to let the city know that there is a homeless person who appears to need services, and they will send an outreach team. You should be able to let them know where the person is, what he or she is wearing, what condition he or she seems to be in, and whether it is an emergency.</p>",
     image: "https://images.unsplash.com/photo-1523847027398-d3eb27914c67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80",
   },
   {
@@ -20,7 +20,7 @@ export const faq_data = [
   {
     id: 4,
     question: "I see a homeless parent and child who seem to need help",
-    answer_html: "<p>Parents with children should never have to sleep on the streets or in public places. If you see a parent with kids who seem to need help, you can approach and ask if they have a place to stay or need the address of a shelter intake facility. You can also dial 311, or tell them to visit the Coalitions Family Housing Support Center(<a href='https://www.coloradocoalition.org/family-support-services'>https://www.coloradocoalition.org/family-support-services</a>).</p>",
+    answer_html: "<p>Parents with children should never have to sleep on the streets or in public places. If you see a parent with kids who seem to need help, you can approach and ask if they have a place to stay or need the address of a shelter intake facility. You can also dial 311, or tell them to visit the <a href='https://www.coloradocoalition.org/family-support-services'>Coalitions Family Housing Support Center</a>.</p>",
     image: "",
   },
   {
@@ -32,7 +32,7 @@ export const faq_data = [
   {
     id: 6,
     question: "Someone on the train or on the street asks me for money or food",
-    answer_html: "<p>Each of us must make our own decisions about whom to help and how, and just because someone is asking for food or money doesn’t necessarily mean he or she is homeless. But it’s safe to assume that person would not be asking for help if help was not needed. If you do not feel comfortable handing someone money or food, you can direct them to a soup kitchen nearby <a href='https://www.foodbankrockies.org/find-food/'><https://www.foodbackrockies.org/find-food'</a></p>",
+    answer_html: "<p>Each of us must make our own decisions about whom to help and how, and just because someone is asking for food or money doesn’t necessarily mean he or she is homeless. But it’s safe to assume that person would not be asking for help if help was not needed. If you do not feel comfortable handing someone money or food, you can direct them to a <a href='https://www.foodbankrockies.org/find-food/'>soup kitchen nearby</a></p>",
     image: "",
   },
   {
