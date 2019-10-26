@@ -56,11 +56,6 @@ export default function TemporaryDrawer() {
         {['Home', 'Mental Health', 'Healthcare', 'Shelter', 'Food'].map((text) => (
           <Link className={classes.listItem} to={"/" + text.toLowerCase()}>
             <ListItem button key={text}>
-              {/* <ListItemIcon>
-                {(text === "Housing" ? <HomeWorkIcon /> :
-                    (text === "Food" ? <FastfoodIcon /> :
-                    (text === "Healthcare" ? <LocalHospitalIcon /> : <FavoriteIcon />))) } 
-              </ListItemIcon> */}
               <ListItemIcon>
                 {(text === "Home" ? <HomeIcon /> :
                     (text === "Mental Health" ? <FavoriteIcon /> :
