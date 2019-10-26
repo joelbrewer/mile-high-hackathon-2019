@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
   },
   logoText: {
     color: 'white',
-    backgroundColor: '#000000a1',
+    backgroundColor: '#000033ab',
     backgroundOpacity: 0.1,
     paddingLeft: '20%',
     paddingRight: '20%',
