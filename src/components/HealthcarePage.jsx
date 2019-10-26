@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import TemporaryDrawer from './drawer.js'
+import Nav from './Nav.jsx'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,16 +23,7 @@ export default function HealthcarePage() {
 
   return (
     <>
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <IconButton edge="start" className="" color="inherit" aria-label="menu">
-            <TemporaryDrawer></TemporaryDrawer>
-          </IconButton>
-          <Typography variant="h6" color="inherit">
-            Help Denver
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Nav />
       <Typography>
           Healthcare Page
       </Typography>
