@@ -54,20 +54,22 @@ export default function TemporaryDrawer() {
     >
       <List>
         {['Home', 'Mental Health', 'Healthcare', 'Shelter', 'Food'].map((text) => (
-          <ListItem button key={text}>
-            {/* <ListItemIcon>
-              {(text === "Housing" ? <HomeWorkIcon /> :
-                  (text === "Food" ? <FastfoodIcon /> :
-                  (text === "Healthcare" ? <LocalHospitalIcon /> : <FavoriteIcon />))) } 
-            </ListItemIcon> */}
-            <ListItemIcon>
-              {(text === "Home" ? <HomeIcon /> :
-                  (text === "Mental Health" ? <FavoriteIcon /> :
-                  (text === "Healthcare" ? <LocalHospitalIcon /> : 
-                  (text === "Shelter" ? <HomeWorkIcon /> : <FastfoodIcon />)))) } 
-            </ListItemIcon>
-            <ListItemText primary={<Link className={classes.listItem} to={"/" + text.toLowerCase()}>{text}</Link>} />
-          </ListItem>
+          <Link className={classes.listItem} to={"/" + text.toLowerCase()}>
+            <ListItem button key={text}>
+              {/* <ListItemIcon>
+                {(text === "Housing" ? <HomeWorkIcon /> :
+                    (text === "Food" ? <FastfoodIcon /> :
+                    (text === "Healthcare" ? <LocalHospitalIcon /> : <FavoriteIcon />))) } 
+              </ListItemIcon> */}
+              <ListItemIcon>
+                {(text === "Home" ? <HomeIcon /> :
+                    (text === "Mental Health" ? <FavoriteIcon /> :
+                    (text === "Healthcare" ? <LocalHospitalIcon /> : 
+                    (text === "Shelter" ? <HomeWorkIcon /> : <FastfoodIcon />)))) } 
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          </Link>
         ))}
       </List>
       <Divider />
