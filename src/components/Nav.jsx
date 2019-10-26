@@ -9,7 +9,6 @@ import FullWidthGrid from './grid.js'
 import CardsList from './CardsList.jsx'
 import TemporaryDrawer from './drawer.js'
 import About from './About.jsx'
-import Nav from './Nav.jsx'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,14 +28,19 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function HomePage() {
+export default function Nav() {
   const classes = useStyles();
 
   return (
     <>
-      <Nav />
-      <About />
-      <CardsList />
+      <AppBar position="static" className={classes.header}>
+        <Toolbar variant="dense">
+          <IconButton edge="start" className="" color="inherit" aria-label="menu">
+            <TemporaryDrawer></TemporaryDrawer>
+          </IconButton>
+          <img src={require("../DenverHelpsLogo.png")} className={classes.image} alt="logo"/>
+        </Toolbar>
+      </AppBar>
     </>
   );
 }
