@@ -25,7 +25,7 @@ export default function HousingPage() {
     <>
       <Nav />
       <Typography>
-          Housing Page
+          Shelter Page
       </Typography>
     </>
   );

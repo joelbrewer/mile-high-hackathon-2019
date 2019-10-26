@@ -27,7 +27,7 @@ function App() {
             <Route path="/healthcare">
               <Healthcare />
             </Route>
-            <Route path="/housing">
+            <Route path="/shelter">
               <Housing />
             </Route>
             <Route path="/food">

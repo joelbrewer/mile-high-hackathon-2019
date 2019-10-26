@@ -9,6 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import HomeWorkIcon from '@material-ui/icons/HomeWork';
+import HomeIcon from '@material-ui/icons/Home';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import FavoriteIcon from '@material-ui/icons/Favorite';
@@ -21,6 +22,10 @@ const useStyles = makeStyles({
   fullList: {
     width: 'auto',
   },
+  listItem: {
+    textDecoration: 'none',
+    color: "gray"
+  }
 });
 
 export default function TemporaryDrawer() {
@@ -48,14 +53,20 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        {['Mental Health', 'Healthcare', 'Housing', 'Food'].map((text) => (
+        {['Home', 'Mental Health', 'Healthcare', 'Shelter', 'Food'].map((text) => (
           <ListItem button key={text}>
-            <ListItemIcon>
+            {/* <ListItemIcon>
               {(text === "Housing" ? <HomeWorkIcon /> :
                   (text === "Food" ? <FastfoodIcon /> :
                   (text === "Healthcare" ? <LocalHospitalIcon /> : <FavoriteIcon />))) } 
+            </ListItemIcon> */}
+            <ListItemIcon>
+              {(text === "Home" ? <HomeIcon /> :
+                  (text === "Mental Health" ? <FavoriteIcon /> :
+                  (text === "Healthcare" ? <LocalHospitalIcon /> : 
+                  (text === "Shelter" ? <HomeWorkIcon /> : <FastfoodIcon />)))) } 
             </ListItemIcon>
-            <ListItemText primary={<Link to={"/" + text.toLowerCase()}>{text}</Link>} />
+            <ListItemText primary={<Link className={classes.listItem} to={"/" + text.toLowerCase()}>{text}</Link>} />
           </ListItem>
         ))}
       </List>
