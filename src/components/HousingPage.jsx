@@ -5,6 +5,8 @@ import Nav from './Nav.jsx'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
+import About from './About.jsx'
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -33,8 +35,7 @@ const useStyles = makeStyles(theme => ({
   },
   header: {
     maxWidth: 800,
-    textAlign: 'center',
-    display: 'flex',
+    textAlign: 'center', display: 'flex',
     margin: '1em',
 
   },
@@ -61,12 +62,8 @@ export default function HousingPage() {
 
   return (
     <>
-    <Nav></Nav>
-    <div className={classes.container}>
-      <Typography className={classes.logoText} variant="h2">
-        Find Shelter.
-      </Typography>
-    </div>
+    <Nav/>
+    <About header="Find Shelter" />
     <div className={classes.headerContainer}>
       <Typography className={classes.header} variant="h4" >
         Enter Zip-code to Find Shelter.
@@ -81,9 +78,10 @@ export default function HousingPage() {
         margin="normal"
         variant="filled"
       />
-        <Button variant="contained" color="primary" size="large" className={classes.margin}>
+           {/*        <Button variant="contained" color="primary" size="large" className={classes.margin}>
           Search
         </Button>
+            */}
 
     </form>
     </div>
