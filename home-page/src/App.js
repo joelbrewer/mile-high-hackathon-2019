@@ -9,6 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import './App.css';
 import FullWidthGrid from './components/grid.js'
+import TemporaryDrawer from './components/drawer.js'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <AppBar position="static">
         <Toolbar variant="dense">
           <IconButton edge="start" className="" color="inherit" aria-label="menu">
-            <MenuIcon />
+            <TemporaryDrawer></TemporaryDrawer>
           </IconButton>
           <Typography variant="h6" color="inherit">
             Help Denver
