@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import FullWidthGrid from './grid.js'
 import CardsList from './CardsList.jsx'
+import TemporaryDrawer from './drawer.js'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,7 +28,7 @@ export default function HomePage() {
       <AppBar position="static">
         <Toolbar variant="dense">
           <IconButton edge="start" className="" color="inherit" aria-label="menu">
-            <MenuIcon />
+            <TemporaryDrawer></TemporaryDrawer>
           </IconButton>
           <Typography variant="h6" color="inherit">
             Help Denver
