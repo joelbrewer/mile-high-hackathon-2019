@@ -78,3 +78,54 @@ export const faq_data = [
     image: "https://images.unsplash.com/photo-1531090041372-c47fb16b796f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80",
   },
 ];
+
+export const mental_health_data = [
+  {
+    description: "Community Resources is designed to help you (single adults and couples without children experiencing homelessness) meet your short-term needs and to transition you, if you have more more intensive needs, into other services",
+    name: "Colorado Coalition - PATH",
+    phone: "303-312-9679",
+    link: "https://www.coloradocoalition.org/community-resources-and-path",
+
+  },
+  {
+    description: "MHCD provides treatment, prevention, crisis services to more than 60,000 people every year. Whether you’re homeless or well-off, there’s never shame in asking for help. You don’t have to struggle alone.",
+    name: "Mental Health Services of Denver",
+    phone: "1-844-493-TALK (8255)",
+    link: "https://mhcd.org/access-services/",
+
+  },
+]
+
+export const health_data = [
+  {
+    description: "The Health Center offers a range of health services in one suite, from one team who work closely with each other to care for our patients. Services are provided to individuals experiencing homelessness or at-risk of becoming homeless regardless of a person’s ability to pay or immigration status.",
+    name: "Colorado Coalition",
+    phone: "303-293-2220",
+    link: "https://www.coloradocoalition.org/health-services"
+
+  },
+  {
+    description: "211 has information about health care services for infants and new parents, and child care services for working parents. Whether you're in need of medical, dental, mental health, or in-home healthcare - 211 is your first resource.",
+    name: "211 - Health Services",
+    phone: "211",
+    link: "http://www.211.org/services/health",
+
+  },
+]
+
+export const food_data = [
+  {
+    description: "Food Bank of the Rockies has a list of soup kitchens that you can filter by zip code. They also have multiple food banks all across the state that you can get food from",
+    name: "Food Bank of the Rockies - Soup Kitchen Search",
+    phone: "303-371-9250",
+    link: "https://www.foodbankrockies.org/find-food/"
+
+  },
+  {
+    description: "211 provides info about school lunch programs and sumer food service programs for children. You can get info on government-sponsored programs that reduce hunger.",
+    name: "211 - Food",
+    phone: "211",
+    link: "http://www.211.org/services/food",
+
+  },
+]

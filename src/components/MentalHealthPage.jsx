@@ -1,32 +1,59 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
+
+import { mental_health_data } from '../constants';
+
 import TemporaryDrawer from './drawer.js'
 import Nav from './Nav.jsx'
+import ContactCard from './ContactCard.jsx'
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
+  card: {
+    maxWidth: 800,
+    margin: "1em",
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
+  text: {
+    fontSize: '1.5em',
+    margin: 0,
+  },
+  expansion: {
+    boxShadow: 'none',
+    padding: 0,
+  },
+  summary: {
+    padding: 0,
+    margin: 0,
+  },
+  details: {
+    padding: 0,
+  },
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    flexDirection: 'column',
   },
 }));
 
 export default function MentalHealthPage() {
   const classes = useStyles();
+  const mentalHealthCards = mental_health_data.map(info => (
+    <ContactCard
+      name={info.name}
+      description={info.description}
+      phone={info.phone}
+      link={info.link}
+    />
+  )
+  )
 
   return (
     <>
       <Nav />
-      <Typography>
-          Mental Health Page
-      </Typography>
+      <div className={classes.container}>
+        {mentalHealthCards}
+      </div>
     </>
   );
 }
