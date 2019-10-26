@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { mental_health_data } from '../constants';
 
-import TemporaryDrawer from './drawer.js'
+import About from './About.jsx'
 import Nav from './Nav.jsx'
 import ContactCard from './ContactCard.jsx'
 
@@ -51,6 +51,7 @@ export default function MentalHealthPage() {
   return (
     <>
       <Nav />
+      <About header="Mental Health" />
       <div className={classes.container}>
         {mentalHealthCards}
       </div>

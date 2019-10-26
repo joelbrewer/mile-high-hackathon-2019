@@ -35,7 +35,7 @@ export default function HomePage() {
   return (
     <>
       <Nav />
-      <About />
+      <About header="Denver Helps" showQuestion />
       <CardsList />
     </>
   );

@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { food_data } from '../constants';
 
+import About from './About.jsx'
 import Nav from './Nav.jsx'
 import ContactCard from './ContactCard.jsx'
 
@@ -50,6 +51,7 @@ export default function FoodPage() {
   return (
     <>
       <Nav />
+      <About header="Food" />
       <div className={classes.container}>
         {mentalHealthCards}
       </div>

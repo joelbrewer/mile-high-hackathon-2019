@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { health_data } from '../constants';
 
 import Nav from './Nav.jsx'
+import About from './About.jsx'
 import ContactCard from './ContactCard.jsx'
 
 const useStyles = makeStyles(theme => ({
@@ -33,6 +34,10 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     flexDirection: 'column',
   },
+  image: {
+    width: '5em',
+    margin: '0 auto',
+  },
 }));
 
 export default function HealthcarePage() {
@@ -50,6 +55,7 @@ export default function HealthcarePage() {
   return (
     <>
       <Nav />
+      <About header="Healthcare" />
       <div className={classes.container}>
         {mentalHealthCards}
       </div>

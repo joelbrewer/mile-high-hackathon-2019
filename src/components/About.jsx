@@ -48,6 +48,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 20,
     paddingBottom: 20,
     minWidth: 350,
+    textAlign: 'center',
   },
   strong: {
     fontWeight: 400,
@@ -55,21 +56,23 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function About() {
+export default function About(props) {
   const classes = useStyles();
 
   return (
     <>
     <div className={classes.container}>
       <Typography className={classes.logoText} variant="h2">
-        Denver Helps
+          {props.header}
       </Typography>
     </div>
-    <div className={classes.headerContainer}>
+    {props.showQuestion &&
+      (<div className={classes.headerContainer}>
       <Typography className={classes.header} variant="h4" >
         Denver Helps exists to answer the question<br/> <span className={classes.strong}>"How can I help my homeless neighbor?"</span>
       </Typography>
-    </div>
+      </div> )
+    }
     </>
   );
 }
