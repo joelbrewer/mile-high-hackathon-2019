@@ -12,6 +12,7 @@ import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles({
   list: {
@@ -54,7 +55,7 @@ export default function TemporaryDrawer() {
                   (text === "Food" ? <FastfoodIcon /> : 
                   (text === "Healthcare" ? <LocalHospitalIcon /> : <FavoriteIcon />))) }   
             </ListItemIcon>
-            <ListItemText primary={text} />
+            <ListItemText primary={<Link to={"/" + text.toLowerCase()}>{text}</Link>} />
           </ListItem>
         ))}
       </List>
