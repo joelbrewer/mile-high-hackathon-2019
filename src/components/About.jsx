@@ -47,7 +47,6 @@ const useStyles = makeStyles(theme => ({
     paddingRight: '20%',
     paddingTop: 20,
     paddingBottom: 20,
-    minWidth: 350,
     textAlign: 'center',
   },
   strong: {

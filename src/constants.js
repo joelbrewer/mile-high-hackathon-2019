@@ -8,7 +8,7 @@ export const faq_data = [
   {
     id: 2,
     question: "I see a homeless person who looks like he or she might be suffering from the cold, heat or other extreme weather",
-    answer_html: "<p>Unless you feel unsafe doing so, ask if the person is ok, has someplace to go and needs help. The NYC Department of Homeless Services has Code Blue and Code Red procedures in place to ensure that homeless people have access to emergency shelter in extreme weather. You can call 311 to let the City know that there is a person in need of such emergency shelter (Note: When the temperature or wind chill is forecast to fall below 32 degrees, the call might be re-routed to 911). If the person seems to require medical attention, dial 911.</p>",
+    answer_html: "<p>Unless you feel unsafe doing so, ask if the person is ok, has someplace to go and needs help. You can call 311 to let the City know that there is a person in need of such emergency shelter (Note: When the temperature or wind chill is forecast to fall below 32 degrees, the call might be re-routed to 911). If the person seems to require medical attention, dial 911.</p>",
     image: "https://images.unsplash.com/photo-1456834292851-cd2d74fb491e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2989&q=80",
   },
   {
