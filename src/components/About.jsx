@@ -25,6 +25,9 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     display: 'flex',
     margin: '1em',
+    lineHeight: 1.7,
+    flexDirection: 'column',
+    fontWeight: 300,
 
   },
   headerContainer: {
@@ -46,6 +49,10 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: 20,
     minWidth: 350,
   },
+  strong: {
+    fontWeight: 400,
+    fontStyle: 'italic',
+  }
 }));
 
 export default function About() {
@@ -60,7 +67,7 @@ export default function About() {
     </div>
     <div className={classes.headerContainer}>
       <Typography className={classes.header} variant="h4" >
-        Our founders weren't sure how to help the homeless they see every day. This resource exists to provide actionable advice. For an interactive guide, text "Denver helps" to 425-374-0096.
+        Denver Helps exists to answer the question<br/> <span className={classes.strong}>"How can I help my homeless neighbor?"</span>
       </Typography>
     </div>
     </>

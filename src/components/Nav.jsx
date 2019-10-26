@@ -26,6 +26,8 @@ const useStyles = makeStyles(theme => ({
     width: '5em',
     margin: '0 auto',
   },
+  phoneNumber: {
+  },
 }));
 
 export default function Nav() {
@@ -39,6 +41,9 @@ export default function Nav() {
             <TemporaryDrawer></TemporaryDrawer>
           </IconButton>
           <img src={require("../DenverHelpsLogo.png")} className={classes.image} alt="logo"/>
+          <Typography className={classes.phoneNumber} variant="h7" >
+            Text "Denver Helps" <br/>to 425-374-0096
+          </Typography>
         </Toolbar>
       </AppBar>
     </>
