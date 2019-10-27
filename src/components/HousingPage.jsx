@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Nav from './Nav.jsx'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-
-import About from './About.jsx'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,7 +33,8 @@ const useStyles = makeStyles(theme => ({
   },
   header: {
     maxWidth: 800,
-    textAlign: 'center', display: 'flex',
+    textAlign: 'center',
+    display: 'flex',
     margin: '1em',
 
   },
@@ -51,19 +50,29 @@ const useStyles = makeStyles(theme => ({
 // 
   margin: {
     margin: theme.spacing(1),
-    // backgroundColor: "red",
     clear: "both",
     display: "block"
   },
 }));
 
+function search(data) {
+    if (data.length === 5) {
+        window.open("https://www.shelterlistings.org/zipcode/" + data + ".html")
+    }
+}
+
 export default function HousingPage() {
   const classes = useStyles();
+  const [count, setCount ] = useState("");
 
   return (
     <>
-    <Nav/>
-    <About header="Find Shelter" />
+    <Nav></Nav>
+    <div className={classes.container}>
+      <Typography className={classes.logoText} variant="h2">
+        Find Shelter.
+      </Typography>
+    </div>
     <div className={classes.headerContainer}>
       <Typography className={classes.header} variant="h4" >
         Enter Zip-code to Find Shelter.
@@ -72,17 +81,17 @@ export default function HousingPage() {
       <TextField
         id="zip"
         label="Enter 5-digit zip-code."
-        // defaultValue=""
-        // onInput={}
+        onChange={(input) => {
+            setCount(input.target.value)
+        }}
         className={classes.textField}
         margin="normal"
         variant="filled"
       />
-           {/*        <Button variant="contained" color="primary" size="large" className={classes.margin}>
+        {count.length === 5 ? search(count) : null}
+        {/* <Button onClick={search(count)} variant="contained" color="primary" size="large" className={classes.margin}>
           Search
-        </Button>
-            */}
-
+        </Button> */}
     </form>
     </div>
     </>
